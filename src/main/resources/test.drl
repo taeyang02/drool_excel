@@ -1,0 +1,12 @@
+package KieRule;
+import com.example.mydrools_excel.Customer;
+
+rule "Test"
+when
+custumerObject : Customer(discount == 1);
+then
+custumerObject.getType()
+custumerObject.setYears(5);
+System.out.println("haha");
+end;
+
